@@ -12,7 +12,7 @@ class Compteur:
         Raises:
             ValueError: name variable must be ascii letters only
         """
-        if True in [ not x in string.ascii_letters for x in name]: raise ValueError("Only ascii characters are allowed for name")
+        if any([ not x in string.ascii_letters for x in name]): raise ValueError("Only ascii characters are allowed for name")
         
         self.file = Path.home() / f".compteur_{name}"
         self.limit = limit

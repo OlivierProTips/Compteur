@@ -6,7 +6,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 setup(
   name = 'compteur',
   packages = ['compteur'],
-  version = '1.0',
+  version = '1.1',
   license='MIT',
   description = 'Count how many time errors occur',
   long_description = long_description,
